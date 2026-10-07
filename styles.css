@@ -30,3 +30,6 @@ details.app[open]>summary{border-bottom:1px solid var(--line);margin-bottom:12px
 details.app>:last-child{margin-bottom:16px}
 details.app h2{font-size:1.1rem;margin-top:1.5em}
 .note{color:var(--muted);font-size:.95rem}
+body{min-height:100vh;display:flex;flex-direction:column}
+header,main,footer{width:100%}
+main{flex:1}
