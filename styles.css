@@ -39,8 +39,8 @@ footer{margin-top:10vh}
 .app-icon{width:96px;height:96px;flex:none}
 .card.has-icon{display:flex;gap:20px;align-items:center}
 .card.has-icon .app-icon{width:80px;height:80px}
-.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:16px 0}
-.shots figure{margin:0}
-.shots img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.shots{display:flex;gap:16px;margin:16px 0}
+.shots figure{margin:0;flex:1 1 0;min-width:0}
+.shots img{width:100%;height:auto;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.25))}
 .shots figcaption{color:var(--muted);font-size:.9rem;margin-top:6px}
-.shots figure:first-child{grid-column:1/-1}
+@media(max-width:700px){.shots{flex-direction:column}}
