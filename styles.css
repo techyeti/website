@@ -33,4 +33,4 @@ details.app h2{font-size:1.1rem;margin-top:1.5em}
 body{min-height:100vh;display:flex;flex-direction:column}
 header,main,footer{width:100%}
 main{flex:1}
-footer{margin-top:64px}
+footer{margin-top:10%}
