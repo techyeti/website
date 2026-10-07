@@ -20,3 +20,13 @@ th{width:30%;color:var(--muted);font-weight:600}
 code,pre{font-family:ui-monospace,Menlo,monospace}
 pre{white-space:pre-wrap;background:var(--card);padding:12px;border-radius:8px;border:1px solid var(--line)}
 footer{padding-top:20px;padding-bottom:40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+
+details.app{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:16px 0;padding:0 20px}
+details.app>summary{cursor:pointer;font-weight:700;font-size:1.25rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.app>summary::-webkit-details-marker{display:none}
+details.app>summary::after{content:"+";font-size:1.5rem;color:var(--muted)}
+details.app[open]>summary::after{content:"\2212"}
+details.app[open]>summary{border-bottom:1px solid var(--line);margin-bottom:12px}
+details.app>:last-child{margin-bottom:16px}
+details.app h2{font-size:1.1rem;margin-top:1.5em}
+.note{color:var(--muted);font-size:.95rem}
