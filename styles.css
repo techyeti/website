@@ -47,4 +47,4 @@ footer{margin-top:10vh}
 .shots img{cursor:zoom-in}
 dialog#lightbox{border:0;padding:0;background:transparent;max-width:95vw;max-height:95vh;overflow:visible}
 dialog#lightbox::backdrop{background:rgba(0,0,0,.8)}
-dialog#lightbox img{display:block;max-width:95vw;max-height:95vh;width:auto;height:auto;cursor:zoom-out}
+dialog#lightbox img{display:block;width:min(95vw,calc(95vh*1.6));height:auto;max-height:95vh;object-fit:contain;cursor:zoom-out}

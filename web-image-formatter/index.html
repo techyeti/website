@@ -7,9 +7,9 @@
 
 <h2>Screenshots</h2>
 <div class="shots">
-<figure><img src="/images/web-image-formatter/screenshot-gallery.png" alt="Editor view showing an image preview with template and image settings" loading="lazy"><figcaption>Editor view: preview, template and crop controls</figcaption></figure>
-<figure><img src="/images/web-image-formatter/screenshot-editor.png" alt="Gallery view showing a grid of imported images" loading="lazy"><figcaption>Gallery view: batch import and export</figcaption></figure>
-<figure><img src="/images/web-image-formatter/screenshot-templates.png" alt="Custom template editor with dimensions, file type, maximum size and subject position" loading="lazy"><figcaption>Custom templates with size limits and subject position</figcaption></figure>
+<figure><img src="/images/web-image-formatter/screenshot-gallery.png" data-full="/images/web-image-formatter/screenshot-gallery-full.png" alt="Editor view showing an image preview with template and image settings" loading="lazy"><figcaption>Editor view: preview, template and crop controls</figcaption></figure>
+<figure><img src="/images/web-image-formatter/screenshot-editor.png" data-full="/images/web-image-formatter/screenshot-editor-full.png" alt="Gallery view showing a grid of imported images" loading="lazy"><figcaption>Gallery view: batch import and export</figcaption></figure>
+<figure><img src="/images/web-image-formatter/screenshot-templates.png" data-full="/images/web-image-formatter/screenshot-templates-full.png" alt="Custom template editor with dimensions, file type, maximum size and subject position" loading="lazy"><figcaption>Custom templates with size limits and subject position</figcaption></figure>
 </div>
 <dialog id="lightbox" aria-label="Screenshot viewer"><img alt=""></dialog>
 
@@ -34,7 +34,7 @@
 <script>
 (function(){var d=document.getElementById("lightbox");if(!d||!d.showModal)return;var im=d.querySelector("img");
 document.querySelectorAll(".shots img").forEach(function(t){t.tabIndex=0;t.setAttribute("role","button");
-function o(){im.src=t.src;im.alt=t.alt;d.showModal()}
+function o(){im.src=t.dataset.full||t.src;im.alt=t.alt;d.showModal()}
 t.addEventListener("click",o);t.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();o()}})});
 d.addEventListener("click",function(){d.close()})})();
 </script></main><footer>&copy; 2026 tekyeti &middot; <a href="mailto:support@tekyeti.dev">support@tekyeti.dev</a> &middot; <a href="/privacy/">Privacy Policy</a></footer></body></html>
