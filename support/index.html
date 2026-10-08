@@ -15,6 +15,49 @@
 <h3>How do I remove the app's saved templates?</h3>
 <p>Delete the app's data from your Mac, or uninstall the app and remove its container data.</p>
 </details>
+<details class="app" id="qr-kiosk">
+<summary>QR Kiosk</summary>
+<h1>QR Kiosk &mdash; Support &amp; FAQ</h1>
+<p>Need help with QR Kiosk? Start here. If your question isn't answered below, contact TekYeti at <a href="mailto:support@tekyeti.dev">support@tekyeti.dev</a>.</p>
+<h2>What does QR Kiosk do?</h2>
+<p>QR Kiosk turns an iPad into a dedicated kiosk display. Point the camera at a QR code containing a web address, and QR Kiosk opens that page full screen with no address bar or navigation controls &mdash; so guests see exactly one page, not a general-purpose web browser.</p>
+<h2>How do I open the hidden Settings screen?</h2>
+<p>QR Kiosk has no visible Settings button by design, so guests can't accidentally change its configuration. To open Settings:</p>
+<ol>
+<li>Place one finger at each side edge of the screen (left edge and right edge).</li>
+<li>Swipe both fingers toward the center of the screen at the same time.</li>
+<li>Hold both fingers in the center for about one second.</li>
+</ol>
+<p>If a Settings PIN has been set, you'll be asked to enter it next.</p>
+<h2>How do I show a different website?</h2>
+<p>Open Settings using the gesture above, then tap <strong>Scan New QR Code</strong>. This returns to the camera scanner so you can scan a different code. Scanning a new code also clears any cookies or cached data left over from the previous website.</p>
+<h2>How do I get back to the website without losing it?</h2>
+<p>Open Settings using the gesture above, then tap <strong>Return to Kiosk</strong>. The website that was already open is still there, exactly where you left it &mdash; this does not reset or reload it.</p>
+<h2>How do I set or change the Settings PIN?</h2>
+<p>Open Settings using the gesture, then under <strong>Settings PIN</strong>, turn on <strong>Require PIN for Settings</strong> and enter a 4&ndash;8 digit PIN twice to confirm. To remove the PIN, turn the toggle off. If you've forgotten the PIN, it can only be cleared by deleting and reinstalling the app, which also erases all local app data.</p>
+<h2>How do I fully lock the iPad to this app?</h2>
+<p>QR Kiosk's gesture and PIN keep casual visitors out of Settings, but for stronger lockdown (blocking the Home button, Control Center, and app switching), use iPadOS's built-in <strong>Guided Access</strong>:</p>
+<ol>
+<li>In the iPad's Settings app, enable Accessibility &gt; Guided Access.</li>
+<li>Open QR Kiosk.</li>
+<li>Triple-click the top button to start a Guided Access session.</li>
+</ol>
+<p>Guided Access uses its own device passcode, separate from the QR Kiosk Settings PIN. Organizations managing many iPads may instead use Mobile Device Management (MDM) to achieve the same result at scale.</p>
+<h2>Does QR Kiosk keep a history of scanned websites?</h2>
+<p>No. QR Kiosk doesn't save a browsing history or list of previously scanned codes. The current website stays loaded until an administrator scans a new code; at that point its cookies, cache, and any data it stored are discarded automatically.</p>
+<h2>Does QR Kiosk collect my data?</h2>
+<p>No. QR Kiosk doesn't require an account and has no analytics, advertising, or tracking. See the full <a href="/privacy/#qr-kiosk">Privacy Policy</a> for details, including how websites opened through QR Kiosk may handle data on their own.</p>
+<h2>The camera isn't scanning anything. What should I check?</h2>
+<ul>
+<li>Make sure QR Kiosk has camera permission: iPad Settings &gt; QR Kiosk &gt; Camera.</li>
+<li>Make sure the QR code encodes a plain http:// or https:// web address &mdash; QR Kiosk ignores codes that don't contain a web address.</li>
+<li>Make sure there's enough light and the code isn't too far from or too close to the camera.</li>
+</ul>
+<h2>What iPadOS version is required?</h2>
+<p>QR Kiosk requires iPadOS 18.4 or later and is designed for iPad only.</p>
+<h2>Still need help?</h2>
+<p>Contact TekYeti at <a href="mailto:support@tekyeti.dev">support@tekyeti.dev</a>.</p>
+</details>
 <script>
 (function(){function o(){var e=location.hash&&document.querySelector(location.hash);if(e&&e.tagName==="DETAILS"){e.open=true;e.scrollIntoView()}}
 addEventListener("hashchange",o);o()})();
