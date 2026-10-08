@@ -58,3 +58,6 @@ dialog#lightbox img{display:block;width:95vw;height:95vh;object-fit:contain;curs
 .lb-btn:hover,.lb-btn:focus-visible{background:rgba(0,0,0,.8)}
 .lb-prev{left:12px}.lb-next{right:12px}
 dialog#lightbox.single .lb-btn{display:none}
+.platform{color:var(--muted);margin:0 0 .5em;font-size:.95rem}
+.app-head .platform{margin:0}
+.card.has-icon h3{margin-bottom:0}
