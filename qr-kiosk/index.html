@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QR Kiosk for iPad</title><meta name="description" content="QR Kiosk turns an iPad into a dedicated kiosk display. Scan a QR code and the website fills the screen."><link rel="stylesheet" href="/styles.css"></head>
+<body><header><a class="brand" href="/">tekyeti</a><nav><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav></header><main>
+<div class="app-head"><img class="app-icon" src="/images/qr-kiosk/icon.png" alt="QR Kiosk app icon" width="96" height="96"><h1>QR Kiosk</h1></div>
+<p class="lead">Scan a code, show a page.</p>
+<p>Turn any iPad into a dedicated QR kiosk. Scan a code, display the website full screen, and keep guests locked to exactly what you intend.</p>
+
+<h2>Screenshots</h2>
+<div class="shots shots-portrait">
+<figure><img src="/images/qr-kiosk/screenshot-instructions.png" data-full="/images/qr-kiosk/screenshot-instructions-full.png" alt="How to Open Settings prompt explaining the two-finger edge swipe gesture" loading="lazy"><figcaption>A one-time prompt explains the hidden Settings gesture</figcaption></figure>
+<figure><img src="/images/qr-kiosk/screenshot-settings.png" data-full="/images/qr-kiosk/screenshot-settings-full.png" alt="QR Kiosk Settings screen with Scan New QR Code, Settings PIN and Return to Kiosk" loading="lazy"><figcaption>Administrator Settings: scan a new code, set a PIN, return to the kiosk</figcaption></figure>
+</div>
+<dialog id="lightbox" aria-label="Screenshot viewer"><img alt=""></dialog>
+
+<p>QR Kiosk turns an iPad into a single-purpose display stand: scan a QR code and the website it points to fills the screen, with no browser chrome, address bar, or navigation buttons for a guest to tap their way out of.</p>
+<p>It's built for the iPad you leave bolted to a podium, a check-in desk, a trade show booth, or a storefront window &mdash; anywhere you want a visitor to land on one page and stay there.</p>
+
+<h2>How it works</h2>
+<ul>
+<li>Point the iPad's camera at any QR code containing an http:// or https:// address.</li>
+<li>QR Kiosk opens that address full screen, instantly.</li>
+<li>The page stays on screen until an administrator chooses to show a new code.</li>
+</ul>
+
+<h2>Administrator settings, hidden from guests</h2>
+<p>QR Kiosk has no visible settings button. To reach the Settings screen, place one finger at each side edge of the screen, swipe both fingers toward the center, and hold them there for one second. This gesture is deliberately unusual so that guests browsing the displayed website won't trigger it by accident.</p>
+<p>From Settings, an administrator can:</p>
+<ul>
+<li>Tap "Scan New QR Code" to return to the scanner and show a different website.</li>
+<li>Turn on an optional 4&ndash;8 digit PIN so only authorized staff can reach Settings.</li>
+<li>Tap "Return to Kiosk" to go back to the currently displayed website without losing its place &mdash; if a PIN is set, it's required again next time.</li>
+</ul>
+<p>For full lockdown, pair QR Kiosk with iPadOS Guided Access (triple-click the top button) or your organization's mobile device management profile to prevent guests from leaving the app entirely.</p>
+
+<h2>Privacy by design</h2>
+<p>QR Kiosk doesn't require an account, doesn't show ads, and doesn't include analytics or tracking. The embedded browser uses a temporary, non-persistent session: cookies and cached data from a displayed website are discarded automatically as soon as an administrator scans a new code, so one visitor's session never carries over to the next.</p>
+<p>QR Kiosk is designed for iPad and intended for use on devices an organization controls and configures.</p>
+<p>Read the full <a href="/privacy/#qr-kiosk">Privacy Policy</a>.</p>
+
+<h2>Support</h2>
+<p>Need help? Visit the <a href="/support/#qr-kiosk">support page</a> or email <a href="mailto:support@tekyeti.dev">support@tekyeti.dev</a>.</p>
+
+<script>
+(function(){var d=document.getElementById("lightbox");if(!d||!d.showModal)return;var im=d.querySelector("img");
+document.querySelectorAll(".shots img").forEach(function(t){t.tabIndex=0;t.setAttribute("role","button");
+function o(){im.src=t.dataset.full||t.src;im.alt=t.alt;d.showModal()}
+t.addEventListener("click",o);t.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();o()}})});
+d.addEventListener("click",function(){d.close()})})();
+</script></main><footer>&copy; 2026 tekyeti &middot; <a href="mailto:support@tekyeti.dev">support@tekyeti.dev</a> &middot; <a href="/privacy/">Privacy Policy</a></footer></body></html>
